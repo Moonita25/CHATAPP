@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fake chat app.</title>
+         <!---Normalize.css--->    
+         <link rel="stylesheet" type="text/css" href="Normalize.css">
+         <!---styles.css--->
+                 <link rel="stylesheet" type="text/css" href="fake.css">
+    </head>
+    <body>
+        <!---come back to this and turn them to links-->
+        <nav class="navbar">
+            <h1 class="logo"><strong>chat</strong>app</h1>
+            <ul class="navlinks">
+                <li><a href="#" id="link1" onclick="event.preventDefault()">Product</a></li>
+                    <li><a href="#" id="link1" onclick="event.preventDefault()">Services</a></li>
+                    <li><a href="#" id="link1" onclick="event.preventDefault()">Contact</a></li>
+                    <li><a href="#" id="link1" onclick="event.preventDefault()">Log In</a></li>
+                    <li><a href="#" class="ctn2" onclick="event.preventDefault()">Try it Free</a></li>
+            </ul>
+            <img src="./menu-btn.png" alt="" class="menu-btn">
+        </nav>
+        <section class="row">
+
+        </section>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.navlinks')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
+</html>

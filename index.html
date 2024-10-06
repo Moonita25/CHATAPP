@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fake chat app.</title>
+         <!---Normalize.css--->    
+         <link rel="stylesheet" type="text/css" href="Normalize.css">
+         <!---styles.css--->
+                 <link rel="stylesheet" type="text/css" href="fake.css">
+    </head>
+    <body>
+                <div class="container">
+                    <div class="row">
+                            <div class="col-1">
+                                <h1>Have your<br>best chat</h1>
+                                <h3>Fast, easy, unlimited team chat</h3>
+                                <button type="button" class="ctn2">Try it Free</button>
+                                <button type="button" class="ctn3">Get a demo</button>
+                            </div><!---end of col-1-->
+            
+                            <div class="col-2">
+                                <img src="./img/DIV!! IMG.png" alt="Chat image" class="chat">
+                            </div><!--end of col-2-->
+                            
+                        </div><!----end of row-->
+
+                    <nav class="navBar">
+                            <div class="bck">
+                                <img src="./img/Logo.png" class="logo">
+                            </div><!--end of bck--> 
+                            <ul class="navLinks">
+                                <li><a href="#" id="link1" onclick="event.preventDefault()">Product</a></li>
+                                    <li><a href="#" id="link1" onclick="event.preventDefault()">Services</a></li>
+                                    <li><a href="#" id="link1" onclick="event.preventDefault()">Contact</a></li>
+                                    <li><a href="#" id="link1" onclick="event.preventDefault()">Login</a></li>
+                                    <li><button type="button" class="ctn1"><a href="#" onclick="event.preventDefault()">Try it Free</a></button></li>
+                            </ul>
+                            <img src="./img/menu-btn.png" class="menu-btn">
+                    </nav>
+                </div><!---container-->
+
+            
+        <script>
+            const menuBtn = document.querySelector('.menu-btn')
+            const navlinks = document.querySelector('.navLinks')
+
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </body>
+</html>
